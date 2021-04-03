@@ -5,7 +5,7 @@ import {Skill} from "./skill/skill";
 
 export const Skills = (props) => {
     let skillElement = props.skills
-        .map(skill => <Skill image={skill.image} title={skill.title} skillText={skill.skillText}/>)
+        .map(skill => <Skill image={skill.image} title={skill.title} discription={skill.discription}/>)
     return (
         <article
             className={`${classes.skillsBlock}`}>

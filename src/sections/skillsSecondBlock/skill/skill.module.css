@@ -7,7 +7,39 @@
     margin: 5px;
 }
 
-.skill__image {
-    width: 35px;
-    height: 30px;
+.skill__title {
+
+}
+
+.skill__description {
+
+}
+
+.skill__iconBox {
+    height: 80px;
+    width: 80px;
+    background-color: rgba(74, 66, 66, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(42deg);
+}
+
+.skill__icon {
+    width: 40px;
+    height: 35px;
+}
+
+
+.skill__iconBox:hover {
+    animation: skill__iconBox 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes skill__iconBox {
+    0% {
+        transform: translateY(50);
+    }
+    100% {
+        transform: translateY(-30px);
+    }
 }

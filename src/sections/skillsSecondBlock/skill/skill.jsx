@@ -5,9 +5,11 @@ import classes from './skill.module.css'
 export const Skill = (props) => {
     return (
         <section className={classes.skill}>
-           <img src={props.image} alt="#" className={classes.skill__image}/>
-            <h3>{props.title}</h3>
-            <p>{props.skillText}</p>
+            <div className={classes.skill__iconBox}>
+                <img src={props.image} alt={props.imgAlt} className={classes.skill__icon}/>
+            </div>
+            <h3 className={classes.skill__title}>{props.title}</h3>
+            <p className={classes.skill__description}>{props.discription}</p>
         </section>
     )
 }
