@@ -1,0 +1,13 @@
+
+.skill {
+    height: 350px;
+    width: 350px;
+    background-color: lightblue;
+    padding: 0 15px 0 15px;
+    margin: 5px;
+}
+
+.skill__image {
+    width: 35px;
+    height: 30px;
+}

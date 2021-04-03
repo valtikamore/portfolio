@@ -1,0 +1,23 @@
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.aboutMe {
+    height: 100vh;
+    background-color: #00ff9b;
+}
+
+.aboutMe__text {
+    width: 300px;
+    font-size: 1.5rem;
+    background-color: white;
+}
+
+.aboutMe__photo {
+    width: 300px;
+    height: 400px;
+    background-color: white;
+}
