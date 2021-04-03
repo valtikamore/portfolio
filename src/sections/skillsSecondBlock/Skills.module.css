@@ -1,19 +1,23 @@
 .skillsBlock {
-    height: 100vh;
+    /*height: 100%;*/
     background-color: #fffb1d;
-    margin-top: 10px;
 }
+
 .container {
     display: flex;
     align-items: center;
     flex-direction: column;
+
 }
+
 .skills__title {
-    background-color: rgba(7,88,90,0.55);
+    background-color: rgba(7, 88, 90, 0.55);
+    margin: 10px 0 10px 0;
 }
+
 .skills {
-    border: 1px solid black;
     width: 100%;
     display: flex;
+    align-items: stretch;
     flex-wrap: wrap;
 }

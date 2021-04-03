@@ -10,16 +10,16 @@ import briefCase from '../assets/012-plotter.svg'
 import machine from '../assets/006-sewing machine.svg'
 
 
-const discription =' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, quo!'
-export const skills =[
-    {image:deskLamp,title:'TypeScript',discription,imgAlt:'lamp'},
-    {image:stepler,title:'TDD',discription,imgAlt:'stepler'},
-    {image:mouth,title:'React',discription,imgAlt:'mouth'},
-    {image:hummer,title:'Redux',discription,imgAlt:'hummer'},
-    {image:keyboard,title:'UI/UX',discription,imgAlt:'keyboard'},
-    {image:cd,title:'Vue',discription,imgAlt:'cd disk'},
-    {image:briefCase,title:'Storybook',discription,imgAlt:'brief case'},
-    {image:plotter,title:'HTML 5 ',discription,imgAlt:'plotter'},
-    {image:machine,title:'CSS3',discription,imgAlt:'sewing machine'},
-    {image:pancelCase,title:'JavaScript ES6+',discription,imgAlt:'pancel case'},
+const discription = ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. spsum dolor sit amet, consepsum dolor sit amet, consepsum dolor sit amet, conse'
+export const skills = [
+    {image: deskLamp, title: 'TypeScript', discription, imgAlt: 'lamp'},
+    {image: stepler, title: 'TDD', discription, imgAlt: 'stepler'},
+    {image: mouth, title: 'React', discription, imgAlt: 'mouth'},
+    {image: hummer, title: 'Redux', discription, imgAlt: 'hummer'},
+    {image: keyboard, title: 'UI/UX', discription, imgAlt: 'keyboard'},
+    {image: cd, title: 'Vue', discription, imgAlt: 'cd disk'},
+    {image: briefCase, title: 'Storybook', discription, imgAlt: 'brief case'},
+    {image: plotter, title: 'HTML 5 ', discription, imgAlt: 'plotter'},
+    {image: machine, title: 'CSS3', discription, imgAlt: 'sewing machine'},
+    {image: pancelCase, title: 'JavaScript ES6+', discription, imgAlt: 'pancel case'},
 ]
