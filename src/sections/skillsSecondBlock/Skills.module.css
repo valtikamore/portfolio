@@ -1,5 +1,4 @@
 .skillsBlock {
-    /*height: 100%;*/
     background-color: #fffb1d;
 }
 
@@ -7,7 +6,6 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-
 }
 
 .skills__title {
@@ -16,7 +14,6 @@
 }
 
 .skills {
-    width: 100%;
     display: flex;
     align-items: stretch;
     flex-wrap: wrap;

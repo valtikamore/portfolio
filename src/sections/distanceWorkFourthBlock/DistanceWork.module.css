@@ -1,0 +1,44 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(146, 26, 2, 0.55);
+}
+
+.distanceWork__block {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.distanceWork__block__title {
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 20px;
+    white-space: nowrap;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 100px;
+}
+
+@media (max-width: 584px) {
+    .distanceWork__block {
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .distanceWork__block__title {
+        margin-bottom: 40px;
+        font-size: 2rem;
+        text-align: center;
+    }
+}

@@ -1,19 +1,23 @@
-import classes from './Skills.module.css'
+
 import container from '../../styles/Container.module.css'
-import {Skill} from "./skill/skill";
+import {Project} from "./project/Project";
+import classes from './Projects.module.css'
+
 
 export const Projects = (props) => {
     let projectElement = props.projects
-        .map(skill => <Skill image={skill.image} title={skill.title} discription={skill.discription}/>)
+        .map(project => <Project image={project.image} imageAlt={project.imageAlt} shortDescription={project.shortDescription} name={project.projectName}/>)
+
+
+
     return (
         <article
-            className={`${classes.skillsBlock}`}>
+            className={`${classes.projectsBlock}`}>
             <div className={`${container.container} ${classes.container}`}>
-                <h2 className={classes.skills__title}>My projects</h2>
+                <h2 className={classes.projects__title}>My projects</h2>
                 <article className={classes.projects} >
-                    {skillElement}
+                    {projectElement}
                 </article>
-
             </div>
 
         </article>

@@ -3,11 +3,11 @@
     display: flex;
     flex-direction: column;
     background-color: lightblue;
-    padding: 20px;
-    width: 33%;
+    padding: 15px;
+    width: 32.99%;
     align-items: center;
     text-align: center;
-    margin: 5px 5px 5px 0;
+    margin: 2px 2px 2px 0;
     border-radius: 10px;
 }
 
@@ -50,3 +50,30 @@
     }
 }
 
+@media (max-width: 768px) {
+    .skill {
+        display: flex;
+        flex-direction: column;
+        background-color: lightblue;
+        padding: 15px;
+        width: 49%;
+        align-items: center;
+        text-align: center;
+        margin: 2px 2px 2px 0;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 456px) {
+    .skill {
+        display: flex;
+        flex-direction: column;
+        background-color: lightblue;
+        padding: 15px;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        margin: 2px 2px 2px 0;
+        border-radius: 10px;
+    }
+}

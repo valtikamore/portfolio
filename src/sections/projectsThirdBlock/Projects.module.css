@@ -1,0 +1,35 @@
+.projectsBlock {
+    background-color: peachpuff;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.projects__title {
+    background-color: rgba(7, 88, 90, 0.55);
+    margin: 10px 0 10px 0;
+}
+
+.projects {
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 410px) {
+    .projects__title {
+        background-color: rgba(7, 88, 90, 0.55);
+        margin: 10px 0 10px 0;
+    }
+
+    .projects {
+        width: 100%;
+        display: flex;
+        align-items: stretch;
+    }
+}
