@@ -3,12 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {skills} from "./data/data";
+import {state} from "./data/data";
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <App skills={skills}/>
+    <App state={state}/>
   </React.StrictMode>,
   document.getElementById('root')
 );

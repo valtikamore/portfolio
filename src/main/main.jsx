@@ -6,7 +6,8 @@ export const Main = (props) => {
     return (
         <main>
             <AboutMe/>
-            <Skills skills={props.skills}/>
+            <Skills skills={props.state.skills}/>
+            <Projects projects={props.state.projects} />
         </main>
     )
 }

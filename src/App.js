@@ -7,7 +7,7 @@ function App(props) {
     return (
         <>
             <Header/>
-            <Main skills={props.skills}/>
+            <Main state={props.state}/>
         </>
     );
 }
