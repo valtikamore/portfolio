@@ -4,10 +4,10 @@ export const Navigation = () => {
     return (
         <nav className={classes.nav}>
             <ul>
-                <li><a href="#">Main</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contacts</a></li>
+                <li><a data-goto='Main' href="#">Main</a></li>
+                <li><a data-goto='Skills' href="#">Skills</a></li>
+                <li><a data-goto='Projects' href="#">Projects</a></li>
+                <li><a data-goto='Contacts' href="#">Contacts</a></li>
             </ul>
         </nav>
     )

@@ -10,7 +10,7 @@ import briefCase from '../assets/012-plotter.svg'
 import machine from '../assets/006-sewing machine.svg'
 
 
-const description = ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. spsum dolor sit amet, consepsum dolor sit amet, consepsum dolor sit amet, conse'
+const description = ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. spsum '
 export const state = {
     skills: [
         {image: deskLamp, title: 'TypeScript', description, imgAlt: 'lamp'},

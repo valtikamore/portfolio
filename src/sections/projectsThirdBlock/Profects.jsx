@@ -6,7 +6,13 @@ import classes from './Projects.module.css'
 
 export const Projects = (props) => {
     let projectElement = props.projects
-        .map(project => <Project image={project.image} imageAlt={project.imageAlt} shortDescription={project.shortDescription} name={project.projectName}/>)
+        .map((project,index) => <Project
+            key={`${index} ${project.imageAlt}`}
+            image={project.image}
+            imageAlt={project.imageAlt}
+            shortDescription={project.shortDescription}
+            name={project.projectName}
+        />)
 
 
 
