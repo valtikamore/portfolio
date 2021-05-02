@@ -33,7 +33,7 @@ export const Contacts = () => {
                                       onChange={onChangeHandler}> </textarea>
                         </li>
                         <li>
-                            <Button title={'Send'} class={classes.btn}/>
+                            <Button title={'Send'} class={classes.btn} type={'submit'}/>
                         </li>
                     </ul>
 

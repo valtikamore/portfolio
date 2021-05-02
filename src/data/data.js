@@ -26,7 +26,7 @@ export const state = {
     ],
     projects: [
         {
-            image: 'http://cdn3.wpbeginner.com/wp-content/uploads/2017/08/socialnetworkbuddypress.png',
+            image: 'https://www.knownhost.com/blog/wp-content/uploads/2019/04/Connections.jpg',
             imageAlt: 'social people',
             projectName: 'Social-network',
             shortDescription: description
