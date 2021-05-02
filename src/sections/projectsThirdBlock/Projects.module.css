@@ -1,5 +1,5 @@
 .projectsBlock {
-    background-color: peachpuff;
+    background-color: #FFFFFF;
 }
 
 .container {
@@ -9,26 +9,24 @@
 }
 
 .projects__title {
-    background-color: rgba(7, 88, 90, 0.55);
     margin: 10px 0 10px 0;
 }
 
 .projects {
     width: 100%;
     display: flex;
+    justify-content: space-between;
     align-items: stretch;
     flex-wrap: wrap;
 }
-
-@media (max-width: 410px) {
-    .projects__title {
-        background-color: rgba(7, 88, 90, 0.55);
-        margin: 10px 0 10px 0;
+@media (max-width: 1256px) {
+    .projects {
+       justify-content: center;
     }
+}
 
+@media (max-width: 580px) {
     .projects {
         width: 100%;
-        display: flex;
-        align-items: stretch;
     }
 }

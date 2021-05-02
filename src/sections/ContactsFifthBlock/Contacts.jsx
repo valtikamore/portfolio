@@ -2,6 +2,7 @@ import container from '../../styles/Container.module.css'
 import {Button} from "../../components/button/Button";
 import classes from "./Contacts.module.css";
 import {useState} from "react";
+import {Title} from "../../components/SectionTitle/Title";
 
 
 export const Contacts = () => {
@@ -12,7 +13,9 @@ export const Contacts = () => {
     return (
         <div className={classes.ContactsBlock}>
             <article className={`${container.container} ${classes.container} `}>
-                <h2 className={classes.contactsBlock__title}>Contacts</h2>
+                    <Title>
+                        Contacts
+                    </Title>
                 <form className={classes.form}>
                     <ul>
                         <li>

@@ -2,6 +2,8 @@
 import container from '../../styles/Container.module.css'
 import {Project} from "./project/Project";
 import classes from './Projects.module.css'
+import {Title} from "../../components/SectionTitle/Title";
+import React from "react";
 
 
 export const Projects = (props) => {
@@ -17,10 +19,11 @@ export const Projects = (props) => {
 
 
     return (
-        <article
-            className={`${classes.projectsBlock}`}>
+        <article className={`${classes.projectsBlock}`}>
             <div className={`${container.container} ${classes.container}`}>
-                <h2 className={classes.projects__title}>My projects</h2>
+                    <Title>
+                        My projects
+                    </Title>
                 <article className={classes.projects} >
                     {projectElement}
                 </article>

@@ -2,6 +2,7 @@ import React from 'react'
 import classes from './Skills.module.css'
 import container from '../../styles/Container.module.css'
 import {Skill} from "./skill/skill";
+import {Title} from "../../components/SectionTitle/Title";
 
 export const Skills = (props) => {
     let skillElement = props.skills
@@ -12,7 +13,7 @@ export const Skills = (props) => {
         <article
             className={`${classes.skillsBlock}`}>
            <div className={`${container.container} ${classes.container}`}>
-               <h2 className={classes.skills__title}>My skills</h2>
+                  <Title>My skills</Title>
               <article className={classes.skills} >
                   {skillElement}
               </article>

@@ -5,6 +5,7 @@
     border: 1px solid black;
 }
 
+/*
 @media (max-width: 566px) {
     .container {
         height: 100%;
@@ -12,4 +13,4 @@
         margin: 0 auto;
         border: 1px solid black;
     }
-}
+}*/
