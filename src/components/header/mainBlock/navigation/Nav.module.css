@@ -1,11 +1,10 @@
 .nav {
-    width: 300px;
+
 }
 
-.nav ul {
+.nav > ul {
     display: flex;
     justify-content: space-between;
-    border: 1px solid black;
 }
 .nav >ul li {
     color: #404040;
