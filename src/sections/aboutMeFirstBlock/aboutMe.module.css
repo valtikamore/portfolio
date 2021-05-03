@@ -10,12 +10,33 @@
     background-color: #00ff9b;
 }
 
-.aboutMe__text {
-    width: 300px;
-    font-size: 1.5rem;
-    background-color: white;
-}
+.aboutMe__block {
 
+}
+.aboutMe__uptitle{
+    color: #000000;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: left;
+    letter-spacing: 2px;
+    line-height: 24px;
+}
+.aboutMe__title{
+    color: #000000;
+    font-family: Montserrat;
+    font-size: 60px;
+    line-height: 56px;
+    text-align: left;
+    margin-top: 15px;
+}
+.aboutMe__subtitle{
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+    line-height: 24px;
+    margin: 0 20px;
+}
 .aboutMe__photo {
     width: 300px;
     height: 400px;

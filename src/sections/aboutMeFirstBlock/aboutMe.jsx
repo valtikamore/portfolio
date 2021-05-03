@@ -9,10 +9,10 @@ export const AboutMe = () => {
             className={
                 `${classes.aboutMe} `}>
             <section  className={`${container.container} ${classes.container}`}>
-                <section className={classes.aboutMe__text}>
-                    <span>Hi There</span>
-                    <h1>I am Valentine Kal'chevski</h1>
-                    <p>Frontend Developer.</p>
+                <section className={classes.aboutMe__block}>
+                    <p className={classes.aboutMe__uptitle}>Hello!</p>
+                    <h1 className={classes.aboutMe__title}>I am Valentine Kal'chevski</h1>
+                    <p className={classes.aboutMe__subtitle}>Frontend Developer.</p>
                 </section>
                 <div className={classes.aboutMe__photo} />
             </section>

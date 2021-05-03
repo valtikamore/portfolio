@@ -1,5 +1,6 @@
 import React from 'react'
 import classes from './Nav.module.css'
+
 export const Navigation = () => {
     return (
         <nav className={classes.nav}>
