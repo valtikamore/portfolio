@@ -1,0 +1,33 @@
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.aboutMe__block{
+    padding: 100px 0 80px 0;
+    background: white;
+}
+.aboutMe__text{
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 24px;
+    color: #606060;
+    margin: 0 0 10px;
+    font-family: 'Lato', sans-serif;
+}
+.photo {
+    height: 400px;
+    width: 400px;
+    background: peachpuff;
+}
+.aboutMe__article{
+    height: 100%;
+    width: 500px;
+}
+.aboutMe__block__button__block{
+    display: flex;
+}
+.aboutMe__block__button__block >button + button {
+    margin-left: 20px;
+}

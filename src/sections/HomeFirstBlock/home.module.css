@@ -5,16 +5,16 @@
     justify-content: space-between;
 }
 
-.aboutMe {
+.home {
     height: 100vh;
     background-color: rgb(238, 237, 253);
 }
 
-.aboutMe__block {
+.home__block {
 
 }
 
-.aboutMe__uptitle {
+.home__uptitle {
     color: #000000;
     font-size: 24px;
     font-weight: 700;
@@ -23,7 +23,7 @@
     line-height: 24px;
 }
 
-.aboutMe__title {
+.home__title {
     color: #000000;
     font-size: 60px;
     line-height: 56px;
@@ -31,7 +31,7 @@
     margin-top: 15px;
 }
 
-.aboutMe__subtitle {
+.home__subtitle {
     font-size: 12px;
     font-weight: 600;
     letter-spacing: 2.5px;
@@ -42,7 +42,7 @@
     margin-bottom: 50px;
 }
 
-.aboutMe__subtitle:before {
+.home__subtitle:before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -52,12 +52,12 @@
     background: #010101;
 }
 
-.aboutMe__photo {
+.home__photo {
     height: 400px;
     width: 400px;
     background: peachpuff;
 }
-.aboutMe__photo img {
+.home__photo img {
     position: absolute;
     right: 0;
     top: 0;
@@ -87,13 +87,13 @@
         justify-content: space-between;
     }
 
-    .aboutMe__text {
+    .home__text {
         width: 300px;
         font-size: 2rem;
         background-color: white;
     }
 
-    .aboutMe__photo {
+    .home__photo {
         width: 250px;
         height: 300px;
         background-color: white;
@@ -101,13 +101,13 @@
 }
 
 @media (max-width: 353px) {
-    .aboutMe__text {
+    .home__text {
         width: 100%;
         font-size: 2rem;
         background-color: white;
     }
 
-    .aboutMe__photo {
+    .home__photo {
         margin-top: 10px;
         width: 100%;
         height: 300px;

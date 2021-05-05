@@ -1,3 +1,7 @@
+.titleWrapper {
+    margin-bottom: 60px;
+}
+
 .title {
     background: rgba(0, 0, 0, 0) url(../../assets/title-bg.png) repeat-y scroll 0 0;
     line-height: 1;

@@ -10,16 +10,14 @@ export const Skills = (props) => {
     return (
 
 
-        <article
-            className={`${classes.skillsBlock}`}>
-           <div className={`${container.container} ${classes.container}`}>
+        <article className={`${classes.skillsBlock}`}>
+           <section className={`${container.container} ${classes.container}`}>
                   <Title>My skills</Title>
               <article className={classes.skills} >
                   {skillElement}
               </article>
 
-           </div>
-
+           </section>
         </article>
     )
 }

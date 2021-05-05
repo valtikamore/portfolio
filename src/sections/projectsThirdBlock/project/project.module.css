@@ -12,13 +12,6 @@
     position: relative;
     margin-bottom: 10px;
 }
-
-.btn {
-    position: absolute;
-    top: 42%;
-    left: 37%;
-}
-
 .project__body__image {
     width: 400px;
     height: 300px;

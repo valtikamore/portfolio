@@ -12,7 +12,7 @@ export const DistanceWork = (props) => {
             <article className={`${container.container}`}>
                 <section className={classes.distanceWork__block} >
                     <h2 className={classes.distanceWork__block__title}>Considering options for a distance job</h2>
-                    <Button title={'Hire me!'} class={classes.btn}/>
+                    <Button title={'Hire me!'}/>
                 </section>
             </article>
         </div>

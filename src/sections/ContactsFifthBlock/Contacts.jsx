@@ -12,7 +12,7 @@ export const Contacts = () => {
     }
     return (
         <div className={classes.ContactsBlock}>
-            <article className={`${container.container} ${classes.container} `}>
+            <article className={`${container.container} ${classes.container}`}>
                     <Title>
                         Contacts
                     </Title>
@@ -36,12 +36,11 @@ export const Contacts = () => {
                                       onChange={onChangeHandler}> </textarea>
                         </li>
                         <li>
-                            <Button title={'Send'} class={classes.btn} type={'submit'}/>
+                            <Button title={'Send'} type={'submit'}/>
                         </li>
                     </ul>
 
                 </form>
-
             </article>
         </div>
 
