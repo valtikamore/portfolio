@@ -8,19 +8,32 @@ export const AboutMe = () => {
     return (
         <div className={classes.aboutMe__block}>
             <article className={`${container.container} ${classes.container}`}>
-                <div className={classes.photo}>
+                <div className={classes.aboutMe__photowrapper}>
+                    <div className={classes.aboutMe__photo}>
 
+                    </div>
                 </div>
                 <section className={classes.aboutMe__article}>
                     <Title>
                         About me
                     </Title>
                     <p className={classes.aboutMe__text}>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidiei dunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exeracita aation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Front-end developer with experience in
+                        creating SPA using React, Redux, HTML, CSS,
+                        JS./TS.
                     </p>
+                        <p className={classes.aboutMe__text}> My free time is dedicated to Codewars,
+                            programming tutorials and educational books.
+                            I'm expanding the horizon in back-end way.
+                            In the future I see myself as a Full Stack
+                            Developer.</p>
+                        <p className={classes.aboutMe__text}> I would like to find a project work/full-time job
+                            in a creative company with up-to-date tasks
+                            and collaborative team!</p>
+
                     <div className={classes.aboutMe__block__button__block}>
                         <Button title='Hire me'></Button>
-                        <Button title='Download cv' outline></Button>
+                        <Button title='Download cv' outline download> </Button>
                     </div>
 
                 </section>
