@@ -1,11 +1,14 @@
 .project {
-    display: flex;
-    flex-direction: column;
-    background-color: lightblue;
-    padding: 10px;
-    align-items: center;
+    width: 50%;
+    margin-bottom: 14px;
+    padding: 0 9px;
+}
+.project__content{
+    color: #242424;
+    background-color: #1bbefe;
     text-align: center;
-    border-radius: 10px;
+    height: 100%;
+    padding: 10px;
 }
 
 .project__head {
@@ -13,26 +16,26 @@
     margin-bottom: 10px;
 }
 .project__body__image {
-    width: 400px;
-    height: 300px;
+    width: 100%;
+    height: 350px;
     border-radius: 5px;
+    object-fit: cover;
 }
-
-.project__body {
-    line-height: 24px;
+.project__body__btn{
+    position: absolute;
+    top: 42%;
+    left: 37%;
 }
 
 .project__title {
-    font-size: 1.2rem;
-    font-weight: 500;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    margin-bottom: 8px;
+    color: #232323;
 }
-
 .project__description {
-    font-size: 1rem;
-    font-weight: 300;
+    color: #858585;
+    text-transform: capitalize;
 }
 
 @media (max-width: 580px) {

@@ -3,6 +3,7 @@ import {Title} from "../../components/SectionTitle/Title";
 import {Button} from "../../components/button/Button";
 import container from "../../styles/Container.module.css";
 import classes from './aboutMe.module.css'
+import CV from '../../assets/pdfCV/cv.pdf'
 
 export const AboutMe = () => {
     return (
@@ -33,7 +34,7 @@ export const AboutMe = () => {
 
                     <div className={classes.aboutMe__block__button__block}>
                         <Button title='Hire me'></Button>
-                        <Button title='Download cv' outline download> </Button>
+                        <a href={CV} target={'_blank'} className={classes.downloadCV}>Download cv</a>
                     </div>
 
                 </section>

@@ -10,11 +10,13 @@
 }
 
 .projects {
-    width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: stretch;
+    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    box-sizing: border-box;
+    margin: 0 -9px;
 }
 @media (max-width: 1256px) {
     .projects {

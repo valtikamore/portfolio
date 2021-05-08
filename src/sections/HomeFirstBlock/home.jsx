@@ -11,8 +11,8 @@ export const Home = () => {
                  ${classes.container}`}>
                 <section className={classes.home__block}>
                     <p className={classes.home__uptitle}>Hello!</p>
-                    <h2 className={classes.home__title}>I'm Valentine Kal'chevski</h2>
-                    <p className={classes.home__subtitle}>Frontend Developer</p>
+                    <h2 className={classes.home__title}>I'm Valentine Kalchevski</h2>
+                    <p className={classes.home__subtitle}>Front-end Developer</p>
                     <div>
                         <Contacts/>
                     </div>

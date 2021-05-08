@@ -28,6 +28,23 @@
     background: peachpuff;
     border: 10px solid #e8e8e8;
 }
+.downloadCV {
+    display: block;
+    color: #000000;
+    background-color: #ffffff;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 2px solid rgba(0, 0, 0, 1);
+    padding: 14px 30px 14px 30px;
+    transition: background-color .3s ease 0s, color .3s ease 0s, border-radius .3s ease 0s;
+    white-space: nowrap;
+}
+.downloadCV:hover{
+    color: #ffffff;
+    background-color: #000000;
+}
+
 .aboutMe__article{
     height: 100%;
     width: 500px;
@@ -35,6 +52,6 @@
 .aboutMe__block__button__block{
     display: flex;
 }
-.aboutMe__block__button__block >button + button {
+.aboutMe__block__button__block >button + a {
     margin-left: 30px;
 }
