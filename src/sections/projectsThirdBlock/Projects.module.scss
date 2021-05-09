@@ -1,5 +1,6 @@
+@import "../../styles/sass/variables";
 .projectsBlock {
-    background-color: #FFFFFF;
+    background-color: $secondary-color-text;
     padding: 100px 0 80px 0;
     .container {
         display: flex;

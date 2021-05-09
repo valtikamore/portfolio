@@ -1,4 +1,4 @@
-
+@import "../../styles/sass/variables";
 .container {
     display: flex;
     justify-content: space-between;
@@ -6,13 +6,13 @@
 }
 .aboutMe__block{
     padding: 100px 0 80px 0;
-    background: white;
+    background: $aboutMe-background;
 }
 .aboutMe__text{
     font-size: 14px;
     font-weight: normal;
     line-height: 24px;
-    color: #606060;
+    color: $p-color;
     margin: 0 0 10px;
     font-family: 'Lato', sans-serif;
 }
@@ -26,12 +26,12 @@
     height: 450px;
     width: 400px;
     background: peachpuff;
-    border: 10px solid #e8e8e8;
+    border: 10px solid $border-color;
 }
 .downloadCV {
     display: block;
-    color: #000000;
-    background-color: #ffffff;
+    color: $primary-color-text;
+    background-color: $secondary-color-text;
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -41,8 +41,8 @@
     white-space: nowrap;
 }
 .downloadCV:hover{
-    color: #ffffff;
-    background-color: #000000;
+    color: $secondary-color-text;
+    background-color: $primary-color-text;
 }
 
 .aboutMe__article{

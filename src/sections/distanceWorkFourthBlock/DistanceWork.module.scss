@@ -1,8 +1,9 @@
+@import "../../styles/sass/variables";
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #FAFAFA;
+    background-color: $distance-background;
 }
 
 .distanceWork__block {

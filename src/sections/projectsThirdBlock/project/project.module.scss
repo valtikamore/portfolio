@@ -1,10 +1,11 @@
+@import "../../../styles/sass/variables";
 .project {
     width: 50%;
     margin-bottom: 14px;
     padding: 0 9px;
     .project__content{
-        color: #242424;
-        background-color: #1bbefe;
+        color: $primary-color-text;
+        background-color: $project-bg-c;
         text-align: center;
         height: 100%;
         padding: 10px;
@@ -23,7 +24,7 @@
                 position: relative;
                 &:before {
                     opacity: 40%;
-                    background: black;
+                    background: $primary-color-text;
                     position: absolute;
                     content: '';
                     top: 0;
@@ -31,37 +32,40 @@
                     left: 0;
                     right: 0;
                 }
-                & a {
+                & > a {
                     display: block;
-                    color: #ffffff;
-                    background-color: #000000;
+                    color: $secondary-color-text;
+                    background-color: $primary-color-text;
                     font-size: 12px;
                     text-transform: uppercase;
                     letter-spacing: 2px;
-                    border: 2px solid rgba(0, 0, 0, 1);
+                    border: 2px solid $primary-color-text;
                     padding: 14px 30px 14px 30px;
                     transition: background-color .3s ease 0s, color .3s ease 0s, border-radius .3s ease 0s;
                     white-space: nowrap;
                     z-index: 1;
                     &:hover{
-                        color: #000000;
-                        background-color: #f8f8f8;
+                        color: $primary-color-text;
+                        background-color: $secondary-color-text;
                     }
                 }
             }
         }
-        project__body{
+        .project__body h3  +  p   {
+            margin-bottom: 20px;
             .project__title {
                 font-family: 'Montserrat', sans-serif;
                 font-size: 24px;
                 margin-bottom: 8px;
-                color: #232323;
+                color: $title-color;
             }
             .project__description {
-                color: #858585;
+                color: $p-color;
                 text-transform: capitalize;
+                margin-bottom: 10px;
             }
         }
+
     }
 
 }
