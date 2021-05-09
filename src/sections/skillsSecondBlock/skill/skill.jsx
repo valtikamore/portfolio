@@ -1,5 +1,5 @@
 import React from 'react'
-import classes from './skill.module.css'
+import classes from './skill.module.scss'
 
 
 export const Skill = (props) => {

@@ -1,6 +1,6 @@
 
-import container from '../styles/Container.module.css'
-import classes from './footer.module.css'
+import container from '../styles/Container.module.scss'
+import classes from './footer.module.scss'
 
 export const Footer = (props) => {
     return (

@@ -1,6 +1,6 @@
-import container from '../../styles/Container.module.css'
+import container from '../../styles/Container.module.scss'
 import {Button} from "../../components/button/Button";
-import classes from "./Contacts.module.css";
+import classes from "./Contacts.module.scss";
 import {useState} from "react";
 import {Title} from "../../components/SectionTitle/Title";
 

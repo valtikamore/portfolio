@@ -12,7 +12,7 @@ export const Main = (props) => {
             <Home/>
             <AboutMe/>
             <Skills skills={props.state.skills}/>
-            <Projects projects={props.state.projects} />
+            <Projects  />
             <DistanceWork/>
             <Contacts/>
         </main>

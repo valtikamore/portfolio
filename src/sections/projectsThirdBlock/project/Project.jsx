@@ -1,6 +1,7 @@
 import React from 'react'
-import classes from './project.module.css'
-import {Button} from "../../../components/button/Button";
+import classes from './project.module.scss'
+
+
 
 
 export const Project = (props) => {
@@ -8,19 +9,16 @@ export const Project = (props) => {
         <section className={classes.project}>
             <div className={classes.project__content}>
                 <section className={classes.project__head}>
-                        <img
-                            className={classes.project__body__image}
-                            src={props.image} alt={props.imageAlt}/>
-                        <div className={classes.project__body__btn}>
-                            <Button title='Look'> </Button>
-                        </div>
+                    <div className={classes.project__body__image} style={props.style}>
+                        <a href={props.href} target={'_blank'}>Look</a>
+                    </div>
                 </section>
                 <article className={classes.project__body}>
-                    <h3 className={classes.project__title}>{props.name}</h3>
-                    <p className={classes.project__description}>{props.shortDescription}</p>
+                    <h3 className={classes.project__title}>{props.title}</h3>
+                    <p className={classes.project__description}>{props.technologies}</p>
+                    <p className={classes.project__description}>{props.description}</p>
                 </article>
             </div>
-
         </section>
     )
 }

@@ -1,8 +1,8 @@
 import React from 'react'
 
-import container from '../../styles/Container.module.css'
+import container from '../../styles/Container.module.scss'
 import {Button} from "../../components/button/Button";
-import classes from "./DistanceWork.module.css";
+import classes from "./DistanceWork.module.scss";
 
 
 export const DistanceWork = (props) => {

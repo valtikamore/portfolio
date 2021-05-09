@@ -1,7 +1,7 @@
 import React from 'react'
-import classes from './Header.module.css'
+import classes from './Header.module.scss'
 import {Navigation} from "./navigation/Nav";
-import container from '../../../styles/Container.module.css'
+import container from '../../../styles/Container.module.scss'
 
 export const Header = () => {
     return (

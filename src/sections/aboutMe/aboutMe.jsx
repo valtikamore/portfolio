@@ -1,8 +1,8 @@
 import React from 'react'
 import {Title} from "../../components/SectionTitle/Title";
 import {Button} from "../../components/button/Button";
-import container from "../../styles/Container.module.css";
-import classes from './aboutMe.module.css'
+import container from "../../styles/Container.module.scss";
+import classes from './aboutMe.module.scss'
 import CV from '../../assets/pdfCV/cv.pdf'
 
 export const AboutMe = () => {

@@ -1,6 +1,6 @@
 import React from 'react'
-import classes from './home.module.css'
-import container from '../../styles/Container.module.css'
+import classes from './home.module.scss'
+import container from '../../styles/Container.module.scss'
 import {Contacts} from "../../components/contacts/contacts";
 
 export const Home = () => {

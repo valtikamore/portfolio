@@ -23,27 +23,6 @@ export const state = {
         {image: plotter, title: 'HTML 5 ', description, imgAlt: 'plotter'},
         {image: machine, title: 'CSS3', description, imgAlt: 'sewing machine'},
         {image: pancelCase, title: 'JavaScript ES6+', description, imgAlt: 'pancel case'},
-    ],
-    projects: [
-        {
-            image: 'https://www.knownhost.com/blog/wp-content/uploads/2019/04/Connections.jpg',
-            imageAlt: 'social people',
-            projectName: 'Social-network',
-            shortDescription: description
-        },
-        {
-            image: 'https://www.nscstrategies.com/wp-content/uploads/2016/06/Task-Force-Creation.jpg',
-            imageAlt: 'todolist',
-            projectName: 'TodoList',
-            shortDescription: description
-        },
-        {
-            image: 'https://s00.yaplakal.com/pics/pics_original/1/8/6/14301681.jpg',
-            imageAlt: 'pizza',
-            projectName: 'React-pizza',
-            shortDescription: description
-        },
-
     ]
 }
 

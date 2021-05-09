@@ -1,6 +1,6 @@
 import React from 'react'
 import {Contact} from "./contact";
-import classes from './contacts.module.css'
+import classes from './contacts.module.scss'
 export const Contacts = () => {
     return (
       <ul className={classes.contacts}>
