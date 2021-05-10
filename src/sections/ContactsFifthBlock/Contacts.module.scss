@@ -1,8 +1,7 @@
 @import "../../styles/sass/variables";
+@import "../../styles/sass/mixins";
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex (center,center,column);
 }
 
 .ContactsBlock {
@@ -23,10 +22,7 @@
 .form ul {
     width: 800px;
     padding-top: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include flex (center,center,column);
 }
 
 .form ul li {

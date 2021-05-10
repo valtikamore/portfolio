@@ -1,4 +1,5 @@
 @import "../../../styles/sass/variables";
+@import "../../../styles/sass/mixins";
 .project {
     width: 50%;
     margin-bottom: 14px;
@@ -13,9 +14,7 @@
             position: relative;
             margin-bottom: 10px;
             .project__body__image {
-                display: flex;
-                align-items: center;
-                justify-content: center;
+               @include flex (center,center,row);
                 width: 100%;
                 height: 350px;
                 border-radius: 5px;
@@ -54,7 +53,6 @@
         .project__body h3  +  p   {
             margin-bottom: 20px;
             .project__title {
-                font-family: 'Montserrat', sans-serif;
                 font-size: 24px;
                 margin-bottom: 8px;
                 color: $title-color;

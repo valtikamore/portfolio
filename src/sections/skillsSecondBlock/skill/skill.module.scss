@@ -1,44 +1,48 @@
-
+@import "../../../styles/sass/variables";
+@import "../../../styles/sass/mixins";
 .skill {
-    display: flex;
-    flex-direction: column;
-    background-color: lightblue;
-    padding: 15px;
     width: 32.99%;
-    align-items: center;
+    margin-bottom: 14px;
+    padding: 0 9px;
     text-align: center;
-    margin: 2px 2px 2px 0;
     border-radius: 10px;
-}
+    @include flex (center,center,column);
+    .skill__content{
+        color: $primary-color-text;
+        background-color: $project-bg-c;
+        text-align: center;
+        height: 100%;
+        padding: 10px;
+        .skill__icon_wrapper{
+            @include flex (center,center,row);
+            .skill__iconBox {
+                margin: 20px 0 20px 0;
+                @include BlockSize(80px,80px);
+                background-color: $skill-bg;
+                @include flex (center,center,row);
+                transform: rotate(42deg);
+                cursor: pointer;
+                &:hover {
+                    animation: skill__iconBox 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                }
+                .skill__icon {
+                    width: 40px;
+                    height: 35px;
+                    transform: rotate(-42deg);
+                }
+        }
+        }
+        .skill__title {
+            margin-bottom: 10px;
+        }
+        .skill__description {
+            color: $p-color;
+            font-size: 14px;
+            line-height: 24px;
+            font-family: 'Lato', sans-serif;
+        }
 
-.skill__title {
-    margin-bottom: 10px;
-}
-
-.skill__description {
-
-}
-
-.skill__iconBox {
-    margin: 20px 0 20px 0;
-    height: 80px;
-    width: 80px;
-    background-color: rgba(74, 66, 66, 0.4);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transform: rotate(42deg);
-    cursor: pointer;
-}
-
-.skill__icon {
-    width: 40px;
-    height: 35px;
-    transform: rotate(-42deg);
-}
-
-.skill__iconBox:hover {
-    animation: skill__iconBox 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
 }
 
 @keyframes skill__iconBox {
@@ -54,13 +58,10 @@
     .skill {
         display: flex;
         flex-direction: column;
-        background-color: lightblue;
         padding: 15px;
         width: 49%;
         align-items: center;
-        text-align: center;
         margin: 2px 2px 2px 0;
-        border-radius: 10px;
     }
 }
 
@@ -68,12 +69,8 @@
     .skill {
         display: flex;
         flex-direction: column;
-        background-color: lightblue;
-        padding: 15px;
         width: 100%;
         align-items: center;
-        text-align: center;
         margin: 2px 2px 2px 0;
-        border-radius: 10px;
     }
 }

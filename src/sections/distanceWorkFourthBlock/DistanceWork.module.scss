@@ -1,32 +1,21 @@
 @import "../../styles/sass/variables";
+@import "../../styles/sass/mixins";
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex (center,center,column);
     background-color: $distance-background;
+    .distanceWork__block {
+        @include flex (center,center,column);
+        padding: 100px 0 80px 0;
+        .distanceWork__block__title {
+            margin-bottom: 20px;
+        }
+    }
 }
 
-.distanceWork__block {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 100px 0 80px 0;
-}
-
-.distanceWork__block__title {
-    margin-bottom: 20px;
-}
 @media (max-width: 584px) {
     .distanceWork__block {
         height: 300px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-
     }
-
     .distanceWork__block__title {
         margin-bottom: 40px;
         font-size: 2rem;

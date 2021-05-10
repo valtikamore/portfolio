@@ -13,9 +13,7 @@ export const Home = () => {
                     <p className={classes.home__uptitle}>Hello!</p>
                     <h2 className={classes.home__title}>I'm Valentine Kalchevski</h2>
                     <p className={classes.home__subtitle}>Front-end Developer</p>
-                    <div>
-                        <Contacts/>
-                    </div>
+                    <Contacts/>
                 </section>
 
                 <div className={classes.home__photo}>

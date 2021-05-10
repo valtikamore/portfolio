@@ -1,69 +1,44 @@
 @import "../../styles/sass/variables";
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
+@import "../../styles/sass/mixins";
 .home {
-    height: 85vh;
+    @include BlockSize(85vh);
     background-color:$home-background;
+    .container {
+        @include flex (center,space-between,row);
+        .home__block {
+            .home__uptitle {
+                @include text($title-color,24px,700,2px,24px);
+            }
+            .home__title {
+                @include text($title-color,60px,700,2px,56px);
+                margin-top: 15px;
+            }
+            .home__subtitle {
+                @include text($title-color,12px,600,2.5px,24px);
+                text-transform: uppercase;
+                position: relative;
+                margin-bottom: 50px;
+                font-family: 'Lato', sans-serif;
+                &:before{
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 35px;
+                    @include BlockSize(1px,100px);
+                    background: $title-color;
+                }
+            }
+        }
+        .home__photo {
+           @include BlockSize(400px,400px);
+            background: peachpuff;
+        }
+    }
 }
 
-.home__block {
 
-}
 
-.home__uptitle {
-    color: $title-color;
-    font-size: 24px;
-    font-weight: 700;
-    text-align: left;
-    letter-spacing: 2px;
-    line-height: 24px;
-}
 
-.home__title {
-    color: $title-color;
-    font-size: 60px;
-    line-height: 56px;
-    text-align: left;
-    margin-top: 15px;
-}
-
-.home__subtitle {
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 2.5px;
-    line-height: 24px;
-    font-family: 'Lato', sans-serif;
-    text-transform: uppercase;
-    position: relative;
-    margin-bottom: 50px;
-}
-
-.home__subtitle:before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 35px;
-    width: 100px;
-    height: 1px;
-    background: $title-color;
-}
-
-.home__photo {
-    height: 400px;
-    width: 400px;
-    background: peachpuff;
-}
-.home__photo img {
-    position: absolute;
-    right: 0;
-    top: 0;
-    left: -392px;
-    bottom: 0;
-}
 
 @media (max-width: 768px) {
     .aboutMe__text {
