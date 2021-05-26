@@ -9,7 +9,7 @@ function App(props) {
         <>
             <Header/>
             <Main state={props.state}/>
-            <Footer/>
+            <Footer contacts={props.state.contacts}/>
         </>
     );
 }

@@ -3,33 +3,66 @@
 
 .aboutMe__block{
     padding: 100px 0 80px 0;
-    background: $aboutMe-background;
+    background: $aboutMe2-background;
+    @media (max-width: 1070px){
+        padding: 20px 0 80px 0;
+    }
     .container {
         @include flex (center,space-between,row);
+        @media (max-width: 1290px){
+            @include flex (center,space-between,column);
+        }
         .aboutMe__photowrapper {
             background: rgba(0, 0, 0, 0) url(../../assets/profile-bg.png) no-repeat scroll 0 100%;
             margin-right: -30px;
             padding-bottom: 40px;
             padding-left: 30px;
+            @media (max-width: 640px){
+                background: none;
+                margin-right: 0;
+                padding-bottom: 0;
+                padding-left: 0;
+            }
             .aboutMe__photo {
-                height: 450px;
-                width: 400px;
+                height: 521px;
+                width: 497px;
                 background: peachpuff;
                 border: 10px solid $border-color;
+                object-fit: cover;
+                @media (max-width: 540px){
+                    background: none;
+                    margin-right: 0;
+                    padding-bottom: 0;
+                    padding-left: 0;
+                    width: 100%;
+                }
+                @media (max-width: 424px){
+                    width: 340px;
+                }
             }
         }
         .aboutMe__article{
             height: 100%;
             width: 500px;
+            @media (max-width: 1290px){
+                @include flex (center,center,column);
+                width: 100%;
+            }
             .aboutMe__text{
                 font-size: 14px;
                 line-height: 24px;
                 color: $p-color;
                 margin: 0 0 10px;
                 font-family: 'Lato', sans-serif;
+                @media (max-width: 1290px){
+                    text-align: center;
+                }
             }
             .aboutMe__block__button__block{
                 display: flex;
+                @media (max-width: 1290px){
+                    justify-content: center;
+                }
                 .downloadCV {
                     display: block;
                     color: $primary-color-text;

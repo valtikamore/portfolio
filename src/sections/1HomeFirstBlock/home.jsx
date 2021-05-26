@@ -1,9 +1,11 @@
 import React from 'react'
 import classes from './home.module.scss'
 import container from '../../styles/Container.module.scss'
-import {Contacts} from "../../components/contacts/contacts";
+import {Links} from "../../components/contacts/links";
+import mainBack from '../../assets/mainBack.jpg'
 
-export const Home = () => {
+export const Home = (props) => {
+
     return (
         <article className={`${classes.home} `}>
             <section
@@ -13,13 +15,9 @@ export const Home = () => {
                     <p className={classes.home__uptitle}>Hello!</p>
                     <h2 className={classes.home__title}>I'm Valentine Kalchevski</h2>
                     <p className={classes.home__subtitle}>Front-end Developer</p>
-                    <Contacts/>
+                    <Links contacts={props.contacts}/>
                 </section>
-
-                <div className={classes.home__photo}>
-
-                </div>
-
+            <img src={mainBack} className={classes.mainImage__block}/>
             </section>
         </article>
     )

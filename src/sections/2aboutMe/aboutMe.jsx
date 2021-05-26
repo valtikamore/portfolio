@@ -4,15 +4,16 @@ import {Button} from "../../components/button/Button";
 import container from "../../styles/Container.module.scss";
 import classes from './aboutMe.module.scss'
 import CV from '../../assets/pdfCV/cv.pdf'
+import port from '../../assets/PortImg.jpg'
 
 export const AboutMe = () => {
     return (
         <div className={classes.aboutMe__block}>
             <article className={`${container.container} ${classes.container}`}>
                 <div className={classes.aboutMe__photowrapper}>
-                    <div className={classes.aboutMe__photo}>
+                    <img src={port} className={classes.aboutMe__photo}>
 
-                    </div>
+                    </img>
                 </div>
                 <section className={classes.aboutMe__article}>
                     <Title>

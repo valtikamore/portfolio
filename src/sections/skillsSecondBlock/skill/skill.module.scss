@@ -1,15 +1,21 @@
 @import "../../../styles/sass/variables";
-@import "../../../styles/sass/mixins";
+@import '../../../styles/sass/mixins';
 .skill {
     width: 32.99%;
     margin-bottom: 14px;
     padding: 0 9px;
     text-align: center;
     border-radius: 10px;
+    @media (max-width: 879px){
+        @include BlockSize(100%,50%);
+    }
+    @media (max-width: 663px){
+        @include BlockSize(100%,100%);
+    }
     @include flex (center,center,column);
     .skill__content{
         color: $primary-color-text;
-        background-color: $project-bg-c;
+        background-color: $contancs-background;
         text-align: center;
         height: 100%;
         padding: 10px;
@@ -54,23 +60,3 @@
     }
 }
 
-@media (max-width: 768px) {
-    .skill {
-        display: flex;
-        flex-direction: column;
-        padding: 15px;
-        width: 49%;
-        align-items: center;
-        margin: 2px 2px 2px 0;
-    }
-}
-
-@media (max-width: 456px) {
-    .skill {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-        margin: 2px 2px 2px 0;
-    }
-}

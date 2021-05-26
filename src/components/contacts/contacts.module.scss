@@ -1,3 +1,9 @@
+@import "../../styles/sass/variables";
+@import "../../styles/sass/mixins";
+
 .contacts {
     display: flex;
+    @media (max-width: 1070px){
+        @include flex (center,center,row);
+    }
 }

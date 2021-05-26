@@ -1,13 +1,19 @@
-import deskLamp from '../assets/002-desk lamp.svg'
-import stepler from '../assets/005-stapler.svg'
-import mouth from '../assets/037-mouse.svg'
-import hummer from '../assets/038-hammer.svg'
-import keyboard from '../assets/031-keyboard.svg'
-import cd from '../assets/042-cd.svg'
-import plotter from '../assets/042-cd.svg'
-import pancelCase from '../assets/010-pencil case.svg'
-import briefCase from '../assets/012-plotter.svg'
-import machine from '../assets/006-sewing machine.svg'
+import deskLamp from '../assets/icons/skills/002-desk lamp.svg'
+import stepler from '../assets/icons/skills/005-stapler.svg'
+import mouth from '../assets/icons/skills/037-mouse.svg'
+import hummer from '../assets/icons/skills/038-hammer.svg'
+import keyboard from '../assets/icons/skills/031-keyboard.svg'
+import cd from '../assets/icons/skills/042-cd.svg'
+import plotter from '../assets/icons/skills/042-cd.svg'
+import pancelCase from '../assets/icons/skills/010-pencil case.svg'
+import briefCase from '../assets/icons/skills/012-plotter.svg'
+import machine from '../assets/icons/skills/006-sewing machine.svg'
+import vkIcon from '../assets/icons/contacts/105-VK.svg'
+import gitIcon from '../assets/icons/contacts/032-github.svg'
+import InstIcon from '../assets/icons/contacts/044-instagram.svg'
+import linkedIcon from '../assets/icons/contacts/052-linkedin.svg'
+import telegaIcon from '../assets/icons/contacts/090-telegram.svg'
+import codeIcon from '../assets/icons/contacts/codewars.svg'
 
 
 const description = ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. spsum '
@@ -23,6 +29,13 @@ export const state = {
         {image: plotter, title: 'HTML 5 ', description, imgAlt: 'plotter'},
         {image: machine, title: 'CSS3', description, imgAlt: 'sewing machine'},
         {image: pancelCase, title: 'JavaScript ES6+', description, imgAlt: 'pancel case'},
-    ]
+    ],
+    contacts:  [
+        {image: gitIcon, imgAlt: 'git',link:'https://github.com/valtikamore'},
+        {image: InstIcon, imgAlt: 'inst',link:'https://www.instagram.com/valtikamore/'},
+        {image: linkedIcon, imgAlt: 'in',link:'https://www.linkedin.com/in/valentin-kalchevski-841055207/'},
+        {image: telegaIcon, imgAlt: 'telegram',link:'https://t.me/Valtikamore'},
+        {image: codeIcon, imgAlt: 'codewars',link:'https://www.codewars.com/users/valtikamore'},
+        ]
 }
 
