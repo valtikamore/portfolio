@@ -1,0 +1,25 @@
+@import "./variables";
+@mixin flex($align,$justify,$direction) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  flex-direction: $direction;
+}
+@mixin text ($color,$font-size,$font-weight,$letter-spacing,$line-height) {
+  color: $color;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  letter-spacing: $letter-spacing;
+  line-height: $line-height;
+}
+@mixin BlockSize($height,$width:null) {
+  height:$height ;
+  width:$width;
+}
+@mixin container() {
+    width:80%;
+    margin:0 auto;
+  @media (max-width: 697px){
+    width:90%;
+  }
+}

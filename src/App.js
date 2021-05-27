@@ -1,6 +1,6 @@
 
 
-import {Header} from "./components/header/mainBlock/Header";
+import {Header} from "./header/Header";
 import {Main} from "./main/main";
 import {Footer} from "./Footer/Footer";
 

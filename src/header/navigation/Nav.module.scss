@@ -1,0 +1,27 @@
+@import '../../styles/sass/variables';
+@import '../../styles/sass/mixin';
+.nav {
+    @include container();
+    ul {
+        @media (max-width: 493px){
+            display: none;
+        }
+        display: flex;
+        justify-content: flex-end;
+        li {
+            @include text(#404040,12px,500,1.5px,24px);
+            display: block;
+            text-transform: uppercase;
+            padding: 8px 21px;
+            cursor: pointer;
+            &:hover {
+                color: #1bbefe;
+            }
+            .active {
+                color: #1bbefe;
+
+            }
+        }
+    }
+}
+

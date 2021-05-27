@@ -1,11 +1,12 @@
 
+@import "../styles/sass/variables";
+@import "../styles/sass/mixin";
 
 .footerBlock {
     background-color: #FAFAFA;
     .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex (center,center,column);
+        @include container();
         .footerBlock__title {
             margin: 20px 0;
         }
@@ -15,19 +16,3 @@
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 370px) {
-    .footerBlock small {
-        font-size: 1rem;
-        padding-bottom: 20px;
-    }
-}

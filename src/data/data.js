@@ -8,12 +8,14 @@ import plotter from '../assets/icons/skills/042-cd.svg'
 import pancelCase from '../assets/icons/skills/010-pencil case.svg'
 import briefCase from '../assets/icons/skills/012-plotter.svg'
 import machine from '../assets/icons/skills/006-sewing machine.svg'
-import vkIcon from '../assets/icons/contacts/105-VK.svg'
 import gitIcon from '../assets/icons/contacts/032-github.svg'
 import InstIcon from '../assets/icons/contacts/044-instagram.svg'
 import linkedIcon from '../assets/icons/contacts/052-linkedin.svg'
 import telegaIcon from '../assets/icons/contacts/090-telegram.svg'
 import codeIcon from '../assets/icons/contacts/codewars.svg'
+import location from '../assets/icons/formInfoIcons/location.svg'
+import mail from '../assets/icons/formInfoIcons/mail.svg'
+import phone from '../assets/icons/formInfoIcons/phone.svg'
 
 
 const description = ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. spsum '
@@ -36,6 +38,11 @@ export const state = {
         {image: linkedIcon, imgAlt: 'in',link:'https://www.linkedin.com/in/valentin-kalchevski-841055207/'},
         {image: telegaIcon, imgAlt: 'telegram',link:'https://t.me/Valtikamore'},
         {image: codeIcon, imgAlt: 'codewars',link:'https://www.codewars.com/users/valtikamore'},
-        ]
+        ],
+    formInfoItems : [
+        {image: mail, imgAlt: 'mail',description:'valtikamore@gmail.com'},
+        {image: location, imgAlt: 'location',description:'Minsk,Belarus'},
+        {image: phone, imgAlt: 'phone',description:'+375(25)-732-18-33'},
+    ]
 }
 
