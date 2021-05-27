@@ -4,7 +4,7 @@
 
 .burger {
   @media (min-width: 492px){
-    transform: translate(0,-150px);
+    display: none;
   }
   input {
     opacity: 0;

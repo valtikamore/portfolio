@@ -1,12 +1,22 @@
-import React from 'react'
-import classes from './Nav.module.scss'
+import React, {useState} from 'react'
+import classes from './BurgerNav.module.scss'
 import {Link} from 'react-scroll'
+import {Burger} from "../burger/Burger";
 
 
-export const Navigation = () => {
+export const BurgerNavigation = () => {
+    const [collapsed, setCollapsed] = useState(false);
+
+    const onClick = () => {
+        setCollapsed(!collapsed)
+    }
+
     return (
         <nav className={classes.nav}>
-            <ul>
+            <div className={classes.burger}>
+                <Burger setCollapsed={setCollapsed} collapsed={onClick}/>
+            </div>
+            <ul className={collapsed ? `${classes.items} ${classes.show}` : `${classes.items}`}>
                 <li><Link activeClass={classes.active}
                           to="main"
                           spy={true}
@@ -48,6 +58,8 @@ export const Navigation = () => {
                           ignoreCancelEvents={false}
                 > Contacts</Link> </li>
             </ul>
+
+
         </nav>
     )
 }

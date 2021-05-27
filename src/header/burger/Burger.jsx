@@ -1,11 +1,11 @@
-import React, {useState} from 'react'
+import React from 'react'
 import classes from './Burger.module.scss'
 
-export const Burger = () => {
+export const Burger = (props) => {
 
     return (
-            <div className={classes.burger}>
-                <input id="burger" type="checkbox" />
+            <div className={classes.burger} >
+                <input id="burger" type="checkbox" onClick={props.collapsed}/>
                 <label htmlFor="burger">
                     <span></span>
                     <span></span>

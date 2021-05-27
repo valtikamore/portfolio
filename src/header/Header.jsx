@@ -1,20 +1,18 @@
-import React, {useState} from 'react'
+import React from 'react'
 import classes from './Header.module.scss'
 import {Navigation} from "./navigation/Nav";
-import {Burger} from "./burger/Burger";
+import {BurgerNavigation} from "./burgerNavigation/BurgerNav";
 
 export const Header = () => {
 
-    const [collapsed, setCollapsed] = useState(false);
+
 
     return (
         <header className={classes.header}  id={'main'}>
-            <div  className={ classes.sticky } >
-                <Burger/>
+            <div  className={ classes.fixed } >
                 <BurgerNavigation/>
                 <Navigation/>
             </div>
-
         </header>
     )
 }
