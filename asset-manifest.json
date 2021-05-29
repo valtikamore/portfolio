@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.8f468a7b.chunk.css",
-    "main.js": "/portfolio/static/js/main.c41268fa.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.c41268fa.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.bb1d8368.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.bb1d8368.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.6828ac96.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.6828ac96.js.map",
     "static/js/2.74554a3b.chunk.js": "/portfolio/static/js/2.74554a3b.chunk.js",
@@ -17,10 +17,10 @@
     "static/media/052-linkedin.3ab0008f.svg": "/portfolio/static/media/052-linkedin.3ab0008f.svg",
     "static/media/090-telegram.9384e9b0.svg": "/portfolio/static/media/090-telegram.9384e9b0.svg",
     "static/media/5-social-engineering-attacks.2f6e8875.png": "/portfolio/static/media/5-social-engineering-attacks.2f6e8875.png",
+    "static/media/CV.78735b44.pdf": "/portfolio/static/media/CV.78735b44.pdf",
     "static/media/PortImg.0d56576a.jpg": "/portfolio/static/media/PortImg.0d56576a.jpg",
     "static/media/c5781d72c1298dc869b74702b4ee42a0.6b019c36.png": "/portfolio/static/media/c5781d72c1298dc869b74702b4ee42a0.6b019c36.png",
     "static/media/codewars.89fb91ea.svg": "/portfolio/static/media/codewars.89fb91ea.svg",
-    "static/media/cv.70200693.pdf": "/portfolio/static/media/cv.70200693.pdf",
     "static/media/location.52238529.svg": "/portfolio/static/media/location.52238529.svg",
     "static/media/mail.7b2c36cb.svg": "/portfolio/static/media/mail.7b2c36cb.svg",
     "static/media/mainBack.2d822aa8.jpg": "/portfolio/static/media/mainBack.2d822aa8.jpg",
@@ -30,6 +30,6 @@
     "static/js/runtime-main.6828ac96.js",
     "static/js/2.74554a3b.chunk.js",
     "static/css/main.8f468a7b.chunk.css",
-    "static/js/main.c41268fa.chunk.js"
+    "static/js/main.bb1d8368.chunk.js"
   ]
 }
