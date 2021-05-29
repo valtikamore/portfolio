@@ -6,9 +6,6 @@ import social from '../../../assets/projects/5-social-engineering-attacks.png'
 import todo from '../../../assets/projects/c5781d72c1298dc869b74702b4ee42a0.png'
 
 
-
-
-
 export const Projects = (props) => {
     const socialNetworkImg = {
         backgroundImage: `url(${social})`
@@ -40,13 +37,13 @@ export const Projects = (props) => {
                              technologies={'React, Redux, REST API, Typescript, Formik, Material-UI, Storybook, Unit-tests'}
                              style={todoListImg}
                     />
-                    <Project title={'Singolo'}
+                    <Project title={'Pizza'}
                              href={'https://github.com/valtikamore/pizza-market'}
                              description={'A Pixel Perfect Landing Page. '}
                              technologies={'HTML5, CSS3, JavaScript'}
                              style={pizza}
                     />
-                    <Project title={'Singolo'}
+                    <Project title={'cards'}
                              href={'https://github.com/valtikamore/pizza-market'}
                              description={'A Pixel Perfect Landing Page. '}
                              technologies={'HTML5, CSS3, JavaScript'}

@@ -1,62 +1,67 @@
 @import "../../../../styles/sass/variables";
 @import '../../../../styles/sass/mixin';
 .skill {
-    width: 32.99%;
     margin-bottom: 14px;
-    padding: 0 9px;
-    text-align: center;
-    border-radius: 10px;
-    @media (max-width: 879px){
-        @include BlockSize(100%,50%);
+    @media (max-width: 564px) {
+        width: 100%;  ;
     }
-    @media (max-width: 663px){
-        @include BlockSize(100%,100%);
-    }
-    @include flex (center,center,column);
     .skill__content{
+        width: 100%;
         color: $primary-color-text;
-        background-color: $contancs-background;
         text-align: center;
         height: 100%;
-        padding: 10px;
-        .skill__icon_wrapper{
-            @include flex (center,center,row);
-            .skill__iconBox {
-                margin: 20px 0 20px 0;
-                @include BlockSize(80px,80px);
-                background-color: $skill-bg;
-                @include flex (center,center,row);
-                transform: rotate(42deg);
-                cursor: pointer;
-                &:hover {
-                    animation: skill__iconBox 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-                }
-                .skill__icon {
-                    width: 40px;
-                    height: 35px;
-                    transform: rotate(-42deg);
-                }
-        }
+        padding: 20px;
+        box-shadow: 0 1px 5px rgba(5, 5, 6, 0.15);
+        -webkit-transition: all 0.3s ease 0s;
+        -o-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s;
+        .image {
+            margin: 0 auto;
+            border: 1px solid #8a8a8a;
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+
+            position: relative;
+            -webkit-transition: all 0.3s ease 0s;
+            -o-transition: all 0.3s ease 0s;
+            transition: all 0.3s ease 0s;
+            .icon {
+                position: absolute;
+                top: 21%;
+                left: 23%;
+                -webkit-transition: all 0.3s ease 0s;
+                -o-transition: all 0.3s ease 0s;
+                transition: all 0.3s ease 0s;
+                font-size: 20px;
+            }
         }
         .skill__title {
-            margin-bottom: 10px;
+            margin-bottom: 20px;
         }
         .skill__description {
             color: $p-color;
             font-size: 14px;
             line-height: 24px;
             font-family: 'Lato', sans-serif;
+            margin-bottom: 20px;
         }
 
     }
+    &:hover {
+        box-shadow: 0 4px 15px rgba(5, 5, 6, 0.1);
+        -webkit-box-shadow: 0 3px 20px rgba(5, 5, 6, 0.10);
+
+        .image {
+            background: black none repeat scroll 0 0;
+            border-color: green;
+
+            .icon {
+                color: white;
+            }
+        }
+    }
 }
 
-@keyframes skill__iconBox {
-    0% {
-        transform: translateY(50);
-    }
-    100% {
-        transform: translateY(-20px);
-    }
-}
+
 

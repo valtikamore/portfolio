@@ -2,15 +2,33 @@
 @import "../../../styles/sass/mixin";
 .skillsBlock {
     background-color: $skills-background;
-    padding: 100px 0 80px 0;
+    padding: 80px 0 80px 0;
+    width: 100%;
+    @media (max-width: 564px) {
+        padding: 20px 0 80px 0;
+    }
     .container {
         @include container();
         @include flex (center,center,column);
         .skills {
-            display: flex;
-            flex-wrap: wrap;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            justify-items: stretch;
             align-items: stretch;
-            margin: 0 -9px;
+            column-gap: 20px;
+            row-gap: 20px;
+            @media (max-width: 1024px) {
+                grid-template-columns: 1fr 1fr 1fr;
+
+            }
+            @media (max-width: 758px) {
+                grid-template-columns: 1fr 1fr ;
+            }
+            @media (max-width: 564px) {
+                grid-template-columns: 1fr  ;
+                grid-template-rows: 1fr 1fr 1fr 1fr;
+            }
         }
     }
 }

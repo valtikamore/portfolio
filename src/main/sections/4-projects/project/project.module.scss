@@ -1,15 +1,12 @@
 @import "../../../../styles/sass/variables";
 @import "../../../../styles/sass/mixin";
 .project {
-    width: 50%;
-    margin-bottom: 14px;
-    padding: 0 9px;
+
     .project__content{
-        color: $primary-color-text;
-        background-color: $project-bg-c;
         text-align: center;
         height: 100%;
-        padding: 10px;
+        padding: 20px;
+        border: 1px solid gray;
         .project__head {
             position: relative;
             margin-bottom: 10px;
@@ -68,8 +65,3 @@
 
 }
 
-@media (max-width: 768px) {
-    .project {
-        width: 100%;
-    }
-}
