@@ -3,12 +3,11 @@ import classes from './Skills.module.scss'
 import {Skill} from "./skill/skill";
 import {Title} from "../../../components/SectionTitle/Title";
 import Fade from "react-reveal/Fade";
-import port from "../../../assets/PortImg.jpg";
 
 export const Skills = (props) => {
 
     return (
-        <article className={`${classes.skillsBlock}`}>
+        <article className={`${classes.skillsBlock}`} id={'skills'}>
             <Fade left>
                 <section className={` ${classes.container}`}>
                     <Title>My skills</Title>

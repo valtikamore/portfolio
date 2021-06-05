@@ -3,6 +3,9 @@
 .projectsBlock {
     background-color: $secondary-color-text;
     padding: 100px 0 80px 0;
+    @media (min-width: 493px){
+        padding: 20px 0 80px 0;
+    }
     .container {
         @include container();
         @include flex(center,center,column);

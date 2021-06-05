@@ -1,52 +1,38 @@
 import React from 'react'
 import classes from './Nav.module.scss'
-import {Link} from 'react-scroll'
+import {Link, AnimatedScroll as scroll} from 'react-scroll'
 
 
 export const Navigation = () => {
+    let arr =[
+        {name: 'main' ,offset:-90},
+        {name: 'skills'},
+        {name: 'projects'},
+        {name: 'contacts',duration:500}
+        ]
+    let navLinks = arr.map((el, i) => {
+            return(
+                <li key={i}>
+                    <Link
+                        activeClass={classes.active}
+                        to={el.name}
+                        delay={0}
+                        spy={true}
+                        smooth={true}
+                        hashSpy={true}
+                        offset={el.offset ? el.offset : 0}
+                        duration={el.duration ? el.duration : 1000}
+                        isDynamic={true}
+                        ignoreCancelEvents={false}
+                    >{el.name}</Link>
+                </li>
+            )
+        })
+
     return (
         <nav className={classes.nav}>
             <ul>
-                <li><Link activeClass={classes.active}
-                          to="main"
-                          spy={true}
-                          smooth={true}
-                          hashSpy={true}
-                          offset={-90}
-                          duration={1000}
-                          isDynamic={true}
-                          ignoreCancelEvents={false}
-                > Main</Link> </li>
-                <li><Link activeClass={classes.active}
-                          to="skills"
-                          spy={true}
-                          smooth={true}
-                          hashSpy={true}
-                          offset={0}
-                          duration={1000}
-                          isDynamic={true}
-                          ignoreCancelEvents={false}
-                > Skills</Link> </li>
-                <li><Link activeClass={classes.active}
-                          to="projects"
-                          spy={true}
-                          smooth={true}
-                          hashSpy={true}
-                          offset={0}
-                          duration={1000}
-                          isDynamic={true}
-                          ignoreCancelEvents={false}
-                > Projects</Link> </li>
-                <li><Link activeClass={classes.active}
-                          to="contacts"
-                          spy={true}
-                          smooth={true}
-                          hashSpy={true}
-                          offset={0}
-                          duration={500}
-                          isDynamic={true}
-                          ignoreCancelEvents={false}
-                > Contacts</Link> </li>
+                {navLinks}
             </ul>
         </nav>
     )

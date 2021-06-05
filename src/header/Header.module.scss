@@ -8,13 +8,12 @@
     }
     .fixed {
         padding: 25px 0;
-        background-color: rgb(238,237,253);
+        background-color: rgba(238,237,253,0.9);
         left: 0;
         position: fixed;
         top: 0;
         width: 100%;
-        z-index: 9999;
-        opacity: 80%;
+        z-index: 10;
     }
 }
 

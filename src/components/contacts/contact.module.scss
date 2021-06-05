@@ -1,5 +1,18 @@
-.contact {
-    margin-right: 15px;
-    height: 30px;
-    width: 30px;
+@import '../../styles/sass/variables';
+@import '../../styles/sass/mixin';
+li {
+    @include flex (center,center,row);
+    a {
+        height: 100%;
+        width: 100%;
+        display: block;
+        .contact {
+            margin-right: 15px;
+            height: 30px;
+            width: 30px;
+            @media (max-width: 768px){
+                margin-right: 25px;
+            }
+        }
+    }
 }

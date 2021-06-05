@@ -11,13 +11,12 @@ export const Home = (props) => {
 
     return (
         <article className={`${classes.home} `} >
-
             <section className={`${classes.container}`}>
                 <Fade left>
                     <section className={classes.home__block}>
                         <Typical
                             className={classes.home__uptitle}
-                            steps={['Hello!', 2000, 'It’s', 100, 'It’s good ', 100, 'It’s good to', 100, 'It’s good to see you!', 100, 'It’s good to see you!', 1000]}
+                            steps={['Hello!', 2000, 'I’am', 100, 'I’am glad ', 100, 'I’am glad to', 100, 'I’am glad to see you!', 100, 'I’am glad to see you!', 1000]}
                             loop={10}
                             wrapper="p"
                         />

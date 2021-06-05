@@ -11,11 +11,12 @@ export const DistanceWork = (props) => {
             <Fade left>
                 <section   className={classes.container}>
                     <h2 className={classes.distanceWork__block__title}>Considering options for a distance job</h2>
-                    <Button title={'Hire me!'}/>
+                    <div className={classes.btn}>
+                        <Button title={'Hire me!'}/>
+                    </div>
+
                 </section>
             </Fade>
-
-
         </div>
 
 
