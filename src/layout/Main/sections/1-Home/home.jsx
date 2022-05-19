@@ -1,13 +1,13 @@
 import React from 'react'
 import classes from './home.module.scss'
-import mainBack from '../../../../assets/mainBack.jpg'
 import Fade from 'react-reveal/Fade';
 import Typical from 'react-typical'
 import Tilt from 'react-tilt'
 import {ScrollIcon} from "./Scroll_icon";
 import {Links} from "../../../../components/Contacts/links";
+import {Image} from "../../../../components/Image/Image";
 
-export const Home = (props) => {
+export const Home = () => {
 
     return (
         <article className={`${classes.home} `} >
@@ -22,7 +22,7 @@ export const Home = (props) => {
                         />
                         <h2 className={classes.home__title}>I'm Valentine Kalchevski</h2>
                         <p className={classes.home__subtitle}>Front-end Developer</p>
-                        <Links contacts={props.contacts}/>
+                        <Links/>
                     </section>
                 </Fade>
                 <Fade right>
@@ -36,12 +36,11 @@ export const Home = (props) => {
                         reset: true,
                         easing: "cubic-bezier(.03,.98,.52,.99)",
                     }}>
-                        <img src={mainBack} className={classes.mainImage__block}/>
+                        <Image className={classes.mainImage__block} type={'mainBack'}/>
                     </Tilt>
                 </Fade>
                 <ScrollIcon/>
             </section>
-
         </article>
     )
 }

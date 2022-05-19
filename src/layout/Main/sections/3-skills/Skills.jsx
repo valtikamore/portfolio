@@ -3,8 +3,9 @@ import classes from './Skills.module.scss'
 import {Skill} from "./skill/skill";
 import {Title} from "../../../../components/SectionTitle/Title";
 import Fade from "react-reveal/Fade";
+import {skills} from "./config";
 
-export const Skills = (props) => {
+export const Skills = () => {
 
     return (
         <article className={`${classes.skillsBlock}`} id={'skills'}>
@@ -12,7 +13,7 @@ export const Skills = (props) => {
                 <section className={` ${classes.container}`}>
                     <Title>My skills</Title>
                     <div className={classes.skills} >
-                        {props.skills.map((skill, index) => <Skill
+                        {skills.map((skill, index) => <Skill
                             key={`${index} ${skill.imgAlt}`}
                             image={skill.image}
                             title={skill.title}
@@ -20,7 +21,6 @@ export const Skills = (props) => {
                             discription={skill.description}
                             imgAlt={skill.imgAlt}/>)}
                     </div>
-
                 </section>
             </Fade>
         </article>

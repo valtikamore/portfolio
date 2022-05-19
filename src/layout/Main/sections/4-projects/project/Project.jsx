@@ -2,9 +2,6 @@ import React from 'react'
 import classes from './project.module.scss'
 import Tilt from "react-tilt";
 
-
-
-
 export const Project = (props) => {
     return (
         <section className={classes.project}>

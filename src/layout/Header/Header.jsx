@@ -6,7 +6,7 @@ import {BurgerNavigation} from "./burgerNavigation/BurgerNav";
 export const Header = () => {
     return (
         <header className={classes.header}  id={'main'}>
-            <div  className={ classes.fixed } >
+            <div className={ classes.fixed } >
                 <BurgerNavigation/>
                 <Navigation/>
             </div>

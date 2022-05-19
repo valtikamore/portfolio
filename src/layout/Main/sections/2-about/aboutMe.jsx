@@ -3,8 +3,8 @@ import {Title} from "../../../../components/SectionTitle/Title";
 import {Button} from "../../../../components/Button/Button";
 import classes from './aboutMe.module.scss'
 import CV from '../../../../assets/pdfCV/CV.pdf'
-import port from '../../../../assets/PortImg.jpg'
 import Fade from "react-reveal/Fade";
+import {Image} from "../../../../components/Image/Image";
 
 export const AboutMe = () => {
     return (
@@ -12,9 +12,7 @@ export const AboutMe = () => {
             <article className={` ${classes.container}`}id={'about'}>
                 <Fade left>
                     <div className={classes.aboutMe__photowrapper}>
-                        <img src={port} className={classes.aboutMe__photo}>
-
-                        </img>
+                        <Image className={classes.aboutMe__photo} type='portImg'/>
                     </div>
                 </Fade>
                 <Fade right>
@@ -43,8 +41,6 @@ export const AboutMe = () => {
 
                     </section>
                 </Fade>
-
-
             </article>
         </div>
 

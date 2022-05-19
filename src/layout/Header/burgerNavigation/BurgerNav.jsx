@@ -3,7 +3,6 @@ import classes from './BurgerNav.module.scss'
 import {Link} from 'react-scroll'
 import {Burger} from "../burger/Burger";
 
-
 export const BurgerNavigation = () => {
     const [collapsed, setCollapsed] = useState(false);
 
@@ -58,8 +57,6 @@ export const BurgerNavigation = () => {
                           ignoreCancelEvents={false}
                 > Contacts</Link> </li>
             </ul>
-
-
         </nav>
     )
 }

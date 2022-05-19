@@ -20,7 +20,6 @@ export const ScrollIcon = () =>  {
 						<div className={style.chevron}></div>
 						<div className={style.chevron}></div>
 					</Link>
-
 					<span className={style.spanText}>Scroll down</span>
 				</div>
 			</div>

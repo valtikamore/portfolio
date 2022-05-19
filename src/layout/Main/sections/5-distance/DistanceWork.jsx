@@ -3,8 +3,7 @@ import {Button} from "../../../../components/Button/Button";
 import classes from "./DistanceWork.module.scss";
 import Fade from "react-reveal/Fade";
 
-
-export const DistanceWork = (props) => {
+export const DistanceWork = () => {
 
     return (
         <div className={classes.distanceWork__block}>
@@ -18,7 +17,5 @@ export const DistanceWork = (props) => {
                 </section>
             </Fade>
         </div>
-
-
     )
 }

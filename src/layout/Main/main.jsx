@@ -6,15 +6,15 @@ import {DistanceWork} from "./sections/5-distance/DistanceWork";
 import {Contacts} from "./sections/6-contacts/Contacts";
 import {AboutMe} from "./sections/2-about/aboutMe";
 
-export const Main = (props) => {
+export const Main = () => {
     return (
         <main>
-            <Home contacts={props.state.contacts}/>
+            <Home/>
             <AboutMe/>
-            <Skills skills={props.state.skills}/>
-            <Projects  />
+            <Skills/>
+            <Projects/>
             <DistanceWork/>
-            <Contacts formInfo={props.state.formInfoItems}/>
+            <Contacts/>
         </main>
     )
 }

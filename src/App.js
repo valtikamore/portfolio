@@ -1,11 +1,11 @@
 import {Header, Main, Footer} from "./layout";
 
-export const App = ({state}) => {
+export const App = () => {
     return (
         <>
             <Header/>
-            <Main state={state}/>
-            <Footer contacts={state.contacts}/>
+            <Main/>
+            <Footer/>
         </>
     );
 }

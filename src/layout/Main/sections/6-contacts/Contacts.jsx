@@ -3,9 +3,9 @@ import classes from "./Contacts.module.scss";
 import {useState} from "react";
 import {Title} from "../../../../components/SectionTitle/Title";
 import {FormInfoItem} from "./formItem/formInfoItem";
+import {config} from "./config";
 
-
-export const Contacts = (props) => {
+export const Contacts = () => {
     const [value, setValue] = useState('')
     const onChangeHandler = (e) => {
         setValue(e.currentTarget.value)
@@ -18,7 +18,7 @@ export const Contacts = (props) => {
                     </Title>
                 <section className={classes.form__block}>
                     <div className={classes.formInfo__block}>
-                        {props.formInfo.map((el,index) => <FormInfoItem
+                        {config.formInfoItems.map((el,index) => <FormInfoItem
                             key={el + index} image={el.image}
                             imgAlt={el.imgAlt}
                             description={el.description}

@@ -9,7 +9,8 @@
     @include BlockSize(60px,60px);
     position: relative;
     margin-bottom: 20px;
-    & img {
+    & img,
+    & svg {
       position: absolute;
       top: 24%;
       left: 25%;
