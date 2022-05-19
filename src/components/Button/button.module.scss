@@ -1,0 +1,31 @@
+.btn {
+    color: #ffffff;
+    background-color: #000000;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 2px solid rgba(0, 0, 0, 1);
+    padding: 14px 30px 14px 30px;
+    transition: background-color .3s ease 0s,color .3s ease 0s,border-radius .3s ease 0s;
+    white-space: nowrap;
+}
+.btn:hover {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.btn__outline {
+    color: #000000;
+    background-color: #ffffff;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 2px solid rgba(0, 0, 0, 1);
+    padding: 14px 30px 14px 30px;
+    transition: background-color .3s ease 0s,color .3s ease 0s,border-radius .3s ease 0s;
+    white-space: nowrap;
+}
+.btn__outline:hover{
+    color: #ffffff;
+    background-color: #000000;
+}

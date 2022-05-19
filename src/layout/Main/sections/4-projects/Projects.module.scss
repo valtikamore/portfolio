@@ -1,0 +1,25 @@
+@import "../../../../styles/sass/variables";
+@import "../../../../styles/sass/mixin";
+.projectsBlock {
+    background-color: $secondary-color-text;
+    padding: 100px 0 80px 0;
+    @media (min-width: 493px){
+        padding: 20px 0 80px 0;
+    }
+    .container {
+        @include container();
+        @include flex(center,center,column);
+        .projects {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr ;
+            justify-items: stretch;
+            align-items: stretch;
+            column-gap: 20px;
+            row-gap: 20px;
+            @media (max-width: 1170px) {
+                grid-template-columns: 1fr ;
+            }
+        }
+    }
+}

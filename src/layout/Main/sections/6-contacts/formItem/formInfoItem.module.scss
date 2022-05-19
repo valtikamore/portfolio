@@ -1,0 +1,24 @@
+@import "../../../../../styles/sass/variables";
+@import "../../../../../styles/sass/mixin";
+
+.formItem {
+  @include flex (center,center,column);
+  .iconWrapper{
+    border: 1px solid black;
+    border-radius: 50%;
+    @include BlockSize(60px,60px);
+    position: relative;
+    margin-bottom: 20px;
+    & img {
+      position: absolute;
+      top: 24%;
+      left: 25%;
+      @include BlockSize(30px,30px);
+
+    }
+  }
+  & div {
+    @include text($info-text,20px,500,2px,24px);
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,22 @@
+@import '../../styles/sass/variables';
+@import '../../styles/sass/mixin';
+.header {
+    height:100px;
+    background:#EEEDFD;
+    @media (max-width: 492px){
+        height:50px;
+    }
+    .fixed {
+        padding: 25px 0;
+        background-color: rgba(238,237,253,0.9);
+        left: 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 10;
+    }
+}
+
+
+
+

@@ -1,4 +1,3 @@
-
 import gitIcon from '../assets/icons/contacts/032-github.svg'
 import InstIcon from '../assets/icons/contacts/044-instagram.svg'
 import linkedIcon from '../assets/icons/contacts/052-linkedin.svg'

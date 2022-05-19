@@ -1,17 +1,11 @@
+import {Header, Main, Footer} from "./layout";
 
-
-import {Header} from "./header/Header";
-import {Main} from "./main/main";
-import {Footer} from "./Footer/Footer";
-
-function App(props) {
+export const App = ({state}) => {
     return (
         <>
             <Header/>
-            <Main state={props.state}/>
-            <Footer contacts={props.state.contacts}/>
+            <Main state={state}/>
+            <Footer contacts={state.contacts}/>
         </>
     );
 }
-
-export default App;
