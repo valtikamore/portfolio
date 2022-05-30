@@ -2,7 +2,7 @@ import React from 'react'
 import {Title} from "../../../../components/SectionTitle/Title";
 import {Button} from "../../../../components/Button/Button";
 import classes from './aboutMe.module.scss'
-import CV from '../../../../assets/pdfCV/CV.pdf'
+import CV from '../../../../assets/pdfCV/CV Valentine K. Frontend engineer.docx.pdf'
 import Fade from "react-reveal/Fade";
 import {Image} from "../../../../components/Image/Image";
 

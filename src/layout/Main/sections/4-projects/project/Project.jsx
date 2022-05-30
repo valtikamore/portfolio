@@ -3,6 +3,7 @@ import classes from './project.module.scss'
 import Tilt from "react-tilt";
 
 export const Project = (props) => {
+    console.log(props?.img)
     return (
         <section className={classes.project}>
             <Tilt className="Tilt" options={{
@@ -17,14 +18,12 @@ export const Project = (props) => {
             }}>
                 <div className={classes.project__content}>
                     <section className={classes.project__head}>
-                        <div className={classes.project__body__image} style={props.style}>
-                            <a href={props.href} target={'_blank'}>Look</a>
-                        </div>
+                        <img src={props?.img} className={classes.project__body__image} alt={props.alt}/>
                     </section>
                     <article className={classes.project__body}>
                         <h3 className={classes.project__title}>{props.title}</h3>
-                        <p className={classes.project__description}>{props.technologies}</p>
                         <p className={classes.project__description}>{props.description}</p>
+                        <p className={classes.project__description}>{props.technologies}</p>
                     </article>
                 </div>
             </Tilt>

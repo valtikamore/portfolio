@@ -17,7 +17,7 @@ import {ReactComponent as MouseSVG} from './skills/037-mouse.svg';
 import {ReactComponent as HammerSVG} from './skills/038-hammer.svg';
 import {ReactComponent as CdSVG} from './skills/042-cd.svg';
 
-import {mainBack, profileBG, socialAttack, title, portImg} from './imageProject/index';
+import {title, portImg, mainBack, profileBg} from './imageProject/index';
 
 export const Image = ({type, className}) => {
     const {socials, form, skills, pngImages} = imageSVGTypes
@@ -87,14 +87,6 @@ export const Image = ({type, className}) => {
         case skills.cdSVG: {
             return <CdSVG />
         }
-
-        case pngImages.socialAttack: {
-            return <img
-                src={socialAttack}
-                alt={pngImages.socialAttack}
-                className={className}
-                />
-        }
         case pngImages.mainBack: {
             return <img
                 src={mainBack}
@@ -111,7 +103,7 @@ export const Image = ({type, className}) => {
         }
         case pngImages.profileBG: {
             return <img
-                src={profileBG}
+                src={profileBg}
                 alt={pngImages.profileBG}
                 className={className}
             />

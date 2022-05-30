@@ -20,6 +20,7 @@ export const Projects = () => {
                                 href={i.path}
                                 description={i.description}
                                 technologies={i.technologies}
+                                img={i.image}
                             />
                         ))}
                     </article>
